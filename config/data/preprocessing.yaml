@@ -1,0 +1,48 @@
+video:
+  min_detection_confidence: 0.5
+  min_tracking_confidence: 0.5
+  batch_size: 10 # Number of frames to process in parallel
+  use_gpu: false # Set to false if you don't have GPU support
+
+dataset_advanced:
+  all_labels_path: 'data/raw/video/dataset_advanced/advanced_sec.csv'
+  all_files_dir: 'data/raw/video/dataset_advanced/'
+
+directories:
+  raw_video_dir: 'data/raw/video'
+  interim_data_dir: 'data/interim'
+  processed_data_dir: 'data/processed'
+
+
+  raw_video_dir_dataset_test: 'data/dataset_test'
+  interim_dirs_dataset_test: ['data/interim/video_keypoints/dataset_test', 'data/interim/video_example/dataset_test']
+  interim_dirs_dataset_test_parallel: ['data/interim/video_keypoints/dataset_test_parallel', 'data/interim/video_example/dataset_test_parallel']
+
+  raw_video_dir_dataset_5: 'data/raw/video/dataset_5'
+  interim_dirs_dataset_5: ['data/interim/video_keypoints/dataset_5', 'data/interim/video_example/dataset_5']
+  
+  interim_dirs_aist_dataset_2: ['data/interim/video_keypoints/dataset_advanced_last100_P012', 'data/interim/video_example/dataset_advanced_last100_P012']
+
+audio:
+  sample_rate: 44100
+  n_mels: 81
+  fft_size: 2048
+
+data_split:
+  train_ratio: 0.7
+  val_ratio: 0.15
+  test_ratio: 0.15
+
+audio_dirs:
+  video_folder_test: "data/dataset_test"
+  audio_folder_test: "data/interim/audio_spectrograms/dataset_test"
+  audio_folder_dataset_5: "data/interim/audio_spectrograms/dataset_5"
+  audio_folder_aist_dataset_2: "data/interim/audio_spectrograms/dataset_advanced_last100_P012"
+
+
+datasets:
+  save_dir_test: "data/processed/dataset_test"
+  save_dir_dataset_5: "data/processed/dataset_5"
+  save_dir_aist_dataset_2: "data/processed/dataset_advanced_last100_P012"
+  
+  

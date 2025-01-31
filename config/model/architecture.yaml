@@ -1,0 +1,18 @@
+model_type: "BiLSTM"
+
+video_input:
+  feature_dim: 51  # 17 keypoints * 3 (x, y, confidence)
+
+audio_input:
+  feature_dim: 128  # n_mels from audio preprocessing
+
+lstm:
+  hidden_size: 256
+  num_layers: 2
+  dropout: 0.2
+
+fusion:
+  method: "concatenate"
+
+output:
+  num_classes: 10  # Number of dance move categories

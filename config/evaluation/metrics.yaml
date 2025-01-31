@@ -1,0 +1,15 @@
+metrics:
+  - accuracy
+  - precision
+  - recall
+  - f1_score
+
+confusion_matrix:
+  normalize: true
+  include_numbers: true
+
+visualization:
+  plot_training_history: true
+  plot_confusion_matrix: true
+  plot_sample_predictions: true
+  num_samples_to_plot: 5

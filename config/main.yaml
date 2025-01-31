@@ -1,0 +1,13 @@
+project_name: DanceBits
+version: 0.1.0
+author: Arpad Dusa, Paras Mehta, Cristina Melnic,
+
+# Paths to other configuration files
+data_config: preprocessing.yaml
+model_config: architecture.yaml
+training_config: training.yaml
+evaluation_config: metrics.yaml
+
+# General settings
+random_seed: 42
+use_gpu: false
